@@ -1,2 +1,13 @@
-@import "tailwindcss";
-@import "tailwindcss-primeui";
+@import 'tailwindcss';
+@import 'tailwindcss-primeui';
+
+@theme {
+  --color-black: #09090b;
+  --color-white: #f4f4f5;
+
+  --color-gray-200: #9f9fa9;
+  --color-gray-300: #71717b;
+  --color-gray-400: #52525c;
+
+  --color-gray-700: #18181b;
+}

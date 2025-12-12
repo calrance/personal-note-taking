@@ -1,7 +1,20 @@
-<div>
-    <div>Note List</div>
+<div class="flex">
+  <div class="flex-1">
     <div>
-        <input type="text" placeholder="Search" [(ngModel)]="noteTitle" />
-
+      <h1>Notes</h1>
+      <div class="w-20 h-20 bg-black">55</div>
+      <p-button
+        styleClass="bg-black text-white border-none"
+        icon="pi pi-plus"
+        aria-label="Add"
+      />
     </div>
+    <app-note-list></app-note-list>
+  </div>
+  <div class="flex-4">
+    <input type="text" placeholder="Search" [(ngModel)]="noteTitle" />
+    <p>Last edited {{ lastEditeDate | date : " d MMMM y 'at' h:mm a" }}</p>
+    <hr />
+    <textarea></textarea>
+  </div>
 </div>
